@@ -1,0 +1,36 @@
+.sec0 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sec0 section {
+    width: 300px;
+    height: 150px;
+    background-color: #88c1d0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+     .sec0 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+    } 
+
+    #OK{ display: grid;
+        justify-content: center;
+        
+    }
+}   
+
+@media screen and (max-width: 767px) {
+    .sec0 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
